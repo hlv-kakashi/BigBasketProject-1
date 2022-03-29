@@ -171,7 +171,7 @@ function checkout(){
 }
 
 function removeitem(index){
-cartArr.splice(index,index+1)
+cartArr.splice(index,1)
 localStorage.setItem("cartitems",JSON.stringify(cartArr));
 document.querySelector("#itemno").innerText= cartArr.length;
 document.querySelector("#cartnum").innerText= cartArr.length;
